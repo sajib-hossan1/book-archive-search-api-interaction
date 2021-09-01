@@ -6,11 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- header aria starts -->
+    <header>
+        <h2 class="text-center p-3 mb-3">Welcome To The Book Library</h2>
+        <section class="container">
+            <!-- getting data -->
+            <div class="input-group mb-3 w-75 mx-auto">
+                <input id="input-field" type="text" class="form-control" placeholder="Search your favourite books..."
+                    aria-label="Recipient's username">
+                <button class="btn btn-outline-secondary ms-2" type="button" id="search-btn">Search</button>
+            </div>
+        </section>
+        <!-- showing results number -->
+        <div></div>
+    </header>
+    <!-- main aria starts -->
+    <main>
+        <section class="container">
+            <div id="single-book-div" class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
+    <!-- bootstrap js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <!-- custom js file -->
     <script src="js/index.js"></script>
 </body>
