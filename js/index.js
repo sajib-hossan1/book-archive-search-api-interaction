@@ -33,7 +33,6 @@ searchBtn.addEventListener('click', function () {
 
 // display data to the DOM
 const displayData = books => {
-    console.log(books.length);
     resultsFound.innerHTML = `Results Found : ${books.length}`
 
     const singleBookDiv = document.getElementById('single-book-div');
