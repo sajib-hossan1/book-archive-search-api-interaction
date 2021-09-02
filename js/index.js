@@ -23,7 +23,7 @@ searchBtn.addEventListener('click', function () {
         spinner.classList.remove('d-none')
         fetch(url)
             .then(res => res.json())
-            .then(data => displayData(data.docs))
+            .then(data => displayData(data.docs.slice(0, 20)))
             .finally(() => {
                 spinner.classList.add('d-none')
             })
@@ -33,6 +33,7 @@ searchBtn.addEventListener('click', function () {
 
 // display data to the DOM
 const displayData = books => {
+    console.log(books.length);
     resultsFound.innerHTML = `Results Found : ${books.length}`
 
     const singleBookDiv = document.getElementById('single-book-div');
