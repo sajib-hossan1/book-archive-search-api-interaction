@@ -1,0 +1,20 @@
+body {
+    background-image: url(../home-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: top right;
+    height: 80vh;
+}
+
+.title-text {
+    text-shadow: 0px 0px 50px rgba(43, 196, 216, 0.246);
+}
+
+.card {
+    transition: box-shadow, transform .3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.070);
+    transform: scale(1.010);
+}
